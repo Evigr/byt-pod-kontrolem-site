@@ -3,3 +3,5 @@
 body{overflow-x:clip}
 
 html{overflow-x:hidden}.hero>div{min-width:0}.phone-wrap{isolation:isolate}.halo{inset:0;background:radial-gradient(ellipse,#0d55954a,transparent 68%)}
+
+header{flex-wrap:wrap;column-gap:24px;row-gap:12px}.languages{margin-left:auto;gap:6px;font-size:12px;flex-wrap:wrap}.languages a{padding:5px 9px;border-radius:8px;white-space:nowrap}.languages a[aria-current]{color:#fff;background:#168bff}.languages a:hover{background:#23344a}.phone h2{overflow-wrap:anywhere}.document h1{overflow-wrap:anywhere}@media(max-width:760px){header>.languages{width:100%;justify-content:flex-end;margin:0}.languages a:first-child{display:block}.hero h1{font-size:clamp(38px,10vw,49px);letter-spacing:-1.8px}.phone{max-width:100%}.tabs>*{padding:4px 8px}.mini-row{flex-wrap:wrap}}

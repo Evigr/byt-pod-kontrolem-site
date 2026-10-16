@@ -51,3 +51,5 @@ support='''<a class="back" href="./">← На главную</a><span class="eye
 (out/'favicon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="18" fill="#168bff"/><text x="32" y="46" text-anchor="middle" font-size="44" font-family="Arial" font-weight="bold" fill="white">Б</text></svg>',encoding='utf-8')
 (out/'.nojekyll').touch()
 print('Built four pages in',out)
+from multilingual import build_languages
+build_languages(out)

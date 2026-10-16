@@ -1,0 +1,118 @@
+{
+  "terms": {
+    "title": "Điều khoản sử dụng ứng dụng «Sinh hoạt trong tầm tay»",
+    "intro": [
+      "Ngày có hiệu lực: 15 tháng 10 năm 2026.",
+      "Chủ sở hữu quyền và nhà phát triển: Tagirov Tagir. Liên hệ: tagir.tagirov.987@gmail.com",
+      "Đây là bản dịch. Nếu có khác biệt với bản gốc tiếng Nga, bản gốc tiếng Nga được ưu tiên áp dụng."
+    ],
+    "sections": [
+      {
+        "title": "1. Chấp nhận điều khoản",
+        "text": "Khi mở lần đầu, ứng dụng hiển thị các điều khoản này và đề nghị bạn chấp nhận; nếu không chấp nhận, bạn không thể dùng các mục của ứng dụng. Nếu không đồng ý với điều khoản, đừng sử dụng ứng dụng và hãy gỡ bỏ nó. Sự đồng ý được lưu trên thiết bị của bạn cùng ngày và số phiên bản điều khoản, và không được gửi đi đâu."
+      },
+      {
+        "title": "2. Ứng dụng là gì",
+        "text": "«Sinh hoạt trong tầm tay» là công cụ ghi chép cá nhân: các thời hạn trong sinh hoạt, khoản thanh toán định kỳ, chi tiêu và chỉ số đồng hồ. Ứng dụng lưu thông tin do bạn tự nhập, đếm ngày và số tiền, và tạo nhắc nhở trên thiết bị của bạn.\n\nỨng dụng không kết nối với ngân hàng, hệ thống thanh toán, nhà cung cấp dịch vụ, công ty bảo hiểm hay cơ quan nhà nước, không nhận thông tin từ họ và không thực hiện thanh toán. Thứ duy nhất ứng dụng nhận từ Internet là tỷ giá tham khảo (mục 4)."
+      },
+      {
+        "title": "3. Đây không phải lời tư vấn",
+        "text": "Ứng dụng không đưa ra lời khuyên về pháp lý, di trú, tài chính, thuế, đầu tư, y tế hay an toàn sản phẩm.\n\n• Thời hạn lưu trú được phép, hiệu lực của visa, bảo hiểm, hợp đồng thuê nhà và các giấy tờ khác do chính giấy tờ và pháp luật quy định. Ứng dụng không biết các quy định này và chỉ đếm ngày từ ngày bạn nhập.\n• Bộ đếm «đã bao lâu» không cho biết sản phẩm, thuốc hay vật tư còn dùng được hay không.\n\nHãy đưa ra các quyết định có hệ quả pháp lý hoặc tài chính dựa trên giấy tờ gốc và, khi cần, cùng chuyên gia phù hợp."
+      },
+      {
+        "title": "4. Các phép tính",
+        "text": "Số tiền và phép tính trong ứng dụng chỉ mang tính tham khảo.\n\n• Ước tính chi phí theo đồng hồ dựa trên biểu giá hoặc các bậc do bạn tự nhập. Các bậc áp dụng cho mức dùng giữa hai lần ghi liên tiếp; thuế, phí và điều chỉnh không được tính riêng. Hoá đơn của nhà cung cấp có thể khác.\n• Tổng chi tiêu chỉ gồm các bản ghi bạn đã nhập.\n• Tổng chi tiêu bằng nhiều loại tiền là ước tính gần đúng. Mọi khoản chi trong kỳ đã chọn được quy đổi theo tỷ giá tham khảo đã lưu gần nhất, không theo tỷ giá ngày mua và không theo tỷ giá của ngân hàng hay quầy đổi tiền của bạn. Số tiền của chính các bản ghi không thay đổi.\n• Ứng dụng lấy tỷ giá từ dịch vụ bên thứ ba (Frankfurter, hoặc ExchangeRate-API khi Frankfurter không khả dụng). Các dịch vụ này không bảo đảm độ chính xác và tính sẵn có của tỷ giá; tỷ giá có thể đã cũ. Ngày tỷ giá và thời điểm kiểm tra gần nhất hiển thị cạnh tổng. Nếu thiếu tỷ giá cho một loại tiền, tổng chung không được hiển thị — số tiền được trình bày riêng theo từng loại tiền."
+      },
+      {
+        "title": "5. Nhắc nhở",
+        "text": "Thông báo do ứng dụng tạo và do hệ điều hành hiển thị. Hệ điều hành có thể làm chậm hoặc không hiển thị thông báo — ví dụ khi tiết kiệm pin, bật «Không làm phiền», buộc dừng ứng dụng, đổi múi giờ hoặc sau khi cập nhật hệ thống. Đừng coi ứng dụng là lời nhắc duy nhất cho thời hạn hay khoản thanh toán quan trọng với bạn."
+      },
+      {
+        "title": "6. Dữ liệu của bạn",
+        "text": "Dữ liệu chỉ được lưu trên thiết bị của bạn. Nhà phát triển không truy cập được và không thể khôi phục dữ liệu.\n\nBạn tự chịu trách nhiệm giữ an toàn dữ liệu: khoá thiết bị và sao lưu. Dữ liệu sẽ mất nếu thiết bị bị mất, hỏng hoặc đặt lại, ứng dụng bị gỡ hoặc khoá mã hoá bị mất, khi bạn không có bản sao lưu. Bản sao lưu có mật khẩu không thể mở nếu không có mật khẩu.\n\nYêu cầu lấy tỷ giá không chứa bản ghi của bạn: chỉ gửi mã loại tiền. Cách ứng dụng xử lý dữ liệu, quyền truy cập và Internet được mô tả trong chính sách quyền riêng tư."
+      },
+      {
+        "title": "7. Nhập bằng giọng nói",
+        "text": "Giọng nói được chuyển thành văn bản bởi dịch vụ nhận dạng của thiết bị. Nếu thiết bị chưa cài mô hình ngôn ngữ, âm thanh được Google hoặc Apple xử lý theo điều khoản riêng của họ. Kết quả nhận dạng có thể không chính xác: hãy kiểm tra bản ghi trước khi lưu."
+      },
+      {
+        "title": "8. Sử dụng được phép",
+        "text": "Ứng dụng dành cho mục đích cá nhân. Nghiêm cấm dịch ngược và sửa đổi ứng dụng, vượt qua các giới hạn kỹ thuật, phát tán bản sao và sử dụng tên cũng như thiết kế của ứng dụng khi chưa có sự cho phép bằng văn bản của chủ sở hữu quyền — trừ trường hợp pháp luật trực tiếp cho phép."
+      },
+      {
+        "title": "9. Sở hữu trí tuệ",
+        "text": "Ứng dụng, mã nguồn, thiết kế và tên của ứng dụng thuộc về chủ sở hữu quyền. Các thành phần bên thứ ba thuộc về tác giả của chúng và được sử dụng theo giấy phép của họ; danh sách và nội dung giấy phép có trong ứng dụng ở màn hình «Giới thiệu»."
+      },
+      {
+        "title": "10. Không bảo đảm",
+        "text": "Ứng dụng được cung cấp «nguyên trạng» và «theo khả năng sẵn có». Nhà phát triển không bảo đảm ứng dụng hoạt động không lỗi và không gián đoạn, các phép tính chính xác hay nhắc nhở đến đúng giờ."
+      },
+      {
+        "title": "11. Giới hạn trách nhiệm",
+        "text": "Trong phạm vi pháp luật hiện hành cho phép, nhà phát triển không chịu trách nhiệm về thiệt hại gián tiếp và ngẫu nhiên, lợi nhuận bị mất và mất dữ liệu phát sinh do sử dụng hoặc không thể sử dụng ứng dụng — kể cả việc lỡ thời hạn và khoản thanh toán, tiền phạt, tiền lãi chậm trả và chi phí liên quan đến lỗi tính toán hoặc nhắc nhở không hoạt động. Tổng trách nhiệm của nhà phát triển giới hạn ở số tiền bạn đã trả cho ứng dụng trong mười hai tháng gần nhất.\n\nCác điều khoản này không hạn chế quyền của người tiêu dùng và trách nhiệm mà pháp luật nước bạn không cho phép hạn chế."
+      },
+      {
+        "title": "12. Tính năng trả phí",
+        "text": "Hiện ứng dụng miễn phí. Nếu có tính năng trả phí, việc mua sẽ thực hiện qua cửa hàng ứng dụng theo quy định của cửa hàng, kể cả quy định hoàn tiền; điều khoản cho tính năng trả phí sẽ được công bố trước khi chúng xuất hiện."
+      },
+      {
+        "title": "13. Thay đổi",
+        "text": "Ứng dụng và các điều khoản này có thể thay đổi. Phiên bản điều khoản mới được công bố tại cùng đường dẫn với ngày mới. Nếu điều khoản thay đổi đáng kể — ví dụ có việc truyền dữ liệu hoặc tính năng trả phí — ứng dụng sẽ hiển thị phiên bản mới và đề nghị bạn chấp nhận lại. Việc làm rõ câu chữ không cần đồng ý lại."
+      },
+      {
+        "title": "14. Liên hệ",
+        "text": "Câu hỏi về điều khoản: tagir.tagirov.987@gmail.com."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư của ứng dụng «Sinh hoạt trong tầm tay»",
+    "intro": [
+      "Ngày có hiệu lực: 16 tháng 10 năm 2026.",
+      "Nhà phát triển: Tagirov Tagir, liên hệ: tagir.tagirov.987@gmail.com",
+      "Đây là bản dịch. Nếu có khác biệt với bản gốc tiếng Nga, bản gốc tiếng Nga được ưu tiên áp dụng."
+    ],
+    "sections": [
+      {
+        "title": "Tóm tắt",
+        "text": "Ứng dụng không thu thập dữ liệu của bạn. Mọi thứ bạn nhập chỉ được lưu trên thiết bị của bạn. Ứng dụng không có máy chủ, tài khoản, quảng cáo hay phân tích.\n\nỨng dụng chỉ truy cập Internet với một mục đích — lấy tỷ giá. Yêu cầu đó không chứa bản ghi của bạn: chỉ có mã loại tiền."
+      },
+      {
+        "title": "Dữ liệu bạn nhập",
+        "text": "• tên và ngày của các thời hạn;\n• tên, số tiền và ngày của các khoản thanh toán định kỳ;\n• số tiền, danh mục, ngày và ghi chú của khoản chi, và với khoản chi thực phẩm — loại hàng đã mua và số tiền từng loại, nếu bạn nhập;\n• tên đồng hồ, chỉ số và biểu giá;\n• ngân sách tháng;\n• mục tiêu tiết kiệm: để dành cho việc gì, cần bao nhiêu, các khoản bỏ vào và lấy ra;\n• cài đặt của ứng dụng, kể cả ngôn ngữ đã chọn, giờ nhắc và những ngày bạn đánh dấu «Hôm nay không chi».\n\nDữ liệu này được ghi vào cơ sở dữ liệu trên thiết bị của bạn. Trong các bản phát hành trên cửa hàng, cơ sở dữ liệu được mã hoá; khoá mã hoá lưu trong vùng lưu trữ bảo mật của hệ thống và không rời khỏi thiết bị. Nhà phát triển không truy cập được dữ liệu của bạn."
+      },
+      {
+        "title": "Quyền truy cập",
+        "text": "• Camera và ảnh — để chụp hoặc chọn ảnh đồng hồ. Ảnh được hiển thị trên màn hình để dễ chép chỉ số; ứng dụng không lưu và không gửi ảnh đi đâu.\n• Micro và nhận dạng giọng nói — để ghi khoản chi bằng giọng nói. Giọng nói được dịch vụ hệ thống của điện thoại chuyển thành văn bản. Nếu thiết bị đã cài mô hình tiếng Nga, âm thanh không rời khỏi thiết bị. Nếu chưa, âm thanh được dịch vụ nhận dạng giọng nói của Google (trên Android) hoặc Apple (trên iPhone) xử lý theo quy định riêng của họ. Ứng dụng chỉ nhận văn bản và không lưu bản ghi âm. Trước lần dùng đầu tiên, ứng dụng hiển thị giải thích này và xin sự đồng ý; bạn có thể rút lại trong cài đặt.\n• Thông báo — để nhắc thời hạn và khoản thanh toán, và nếu bạn bật nhắc buổi tối — mỗi ngày một lần, khi cả ngày chưa ghi khoản chi nào, gợi ý ghi chi tiêu. Thông báo được tạo trên thiết bị, không qua máy chủ. Theo mặc định, thông báo không chứa tên và số tiền; nhắc buổi tối không bao giờ chứa chúng.\n• Sinh trắc học — để mở ứng dụng nếu bạn bật khoá. Việc kiểm tra do hệ thống thực hiện; ứng dụng không nhận vân tay hay hình ảnh khuôn mặt.\n\nMỗi quyền chỉ được yêu cầu khi bạn dùng tính năng tương ứng. Từ chối không ngăn bạn nhập dữ liệu thủ công."
+      },
+      {
+        "title": "Truy cập Internet",
+        "text": "Ứng dụng chỉ truy cập Internet để lấy tỷ giá — nhằm hiển thị tổng chi tiêu theo loại tiền bạn chọn.\n\n• Khi nào. Khi bạn mở ứng dụng, nếu đã một tuần kể từ lần kiểm tra thành công gần nhất hoặc tỷ giá đã lưu cũ hơn một tuần, và khi bạn nhấn «Cập nhật tỷ giá». Không có yêu cầu nào chạy nền khi ứng dụng đóng. Có thể tắt kiểm tra tự động trong cài đặt.\n• Đến đâu. Dịch vụ Frankfurter (api.frankfurter.dev); nếu không khả dụng — ExchangeRate-API (open.er-api.com). Ứng dụng không có khoá truy cập hay tài khoản ở các dịch vụ này.\n• Gửi gì. Chỉ mã loại tiền của ứng dụng (VND, RUB, USD, EUR) trong địa chỉ yêu cầu — giống nhau với mọi người dùng. Chi tiêu, số tiền, ghi chú, tên và mọi bản ghi khác của bạn không được gửi đi.\n• Dịch vụ có thể thấy gì. Địa chỉ IP của thiết bị, thời điểm yêu cầu và thông tin kỹ thuật của kết nối — như mọi trang web bạn mở. Cách các dịch vụ xử lý thông tin này do quy định riêng của họ điều chỉnh: frankfurter.dev và exchangerate-api.com. Nhà phát triển ứng dụng không nhận các thông tin này.\n• Lưu lại trên thiết bị. Tỷ giá đã nhận, ngày của tỷ giá và thời điểm kiểm tra gần nhất. Khi không có Internet, ứng dụng vẫn hoạt động bình thường và dùng tỷ giá đã lưu gần nhất."
+      },
+      {
+        "title": "Chia sẻ với bên thứ ba",
+        "text": "Ứng dụng không chia sẻ và không bán dữ liệu của bạn cho bên thứ ba. Yêu cầu lấy tỷ giá không chứa bản ghi của bạn."
+      },
+      {
+        "title": "Sao lưu",
+        "text": "Bạn có thể lưu bản sao dữ liệu ra tệp. Gửi tệp đi đâu là do bạn quyết định; từ đó, sự an toàn của tệp phụ thuộc vào nơi bạn chọn. Bản sao lưu có thể được bảo vệ bằng mật khẩu. Quên mật khẩu thì không thể khôi phục. Tỷ giá đã lưu, giao diện và ngôn ngữ đã chọn, cài đặt nhắc buổi tối và các dấu «Hôm nay không chi» không nằm trong bản sao lưu: chúng thuộc về thiết bị này.\n\nTính năng sao lưu hệ thống của Android đã bị tắt cho ứng dụng. Trên iPhone, tệp cơ sở dữ liệu có thể nằm trong bản sao lưu iCloud hoặc máy tính nếu bạn bật các bản sao lưu đó; tệp vẫn được mã hoá và khoá không nằm trong bản sao lưu."
+      },
+      {
+        "title": "Xoá dữ liệu",
+        "text": "Trong cài đặt của ứng dụng có «Xoá toàn bộ dữ liệu»: bản ghi và cài đặt bị xoá khỏi thiết bị vĩnh viễn. Gỡ ứng dụng cũng xoá toàn bộ dữ liệu của nó. Ứng dụng không thể xoá các tệp sao lưu bạn đã lưu trước đó — hãy xoá chúng ở nơi đã lưu."
+      },
+      {
+        "title": "Trẻ em",
+        "text": "Ứng dụng không dành cho trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ — cũng như không thu thập dữ liệu của bất kỳ người dùng nào khác."
+      },
+      {
+        "title": "Thay đổi",
+        "text": "Nếu chính sách thay đổi, phiên bản mới sẽ xuất hiện tại cùng đường dẫn này với ngày mới. Ứng dụng sẽ thông báo về các thay đổi đáng kể khi cập nhật."
+      },
+      {
+        "title": "Liên hệ",
+        "text": "Câu hỏi về quyền riêng tư: tagir.tagirov.987@gmail.com."
+      }
+    ]
+  }
+}
