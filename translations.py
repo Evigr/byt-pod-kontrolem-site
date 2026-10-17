@@ -66,4 +66,16 @@ ROWS = [
 ('Ещё один шаг к путешествию. Без лишней суеты.','One step closer to your trip. Without the fuss.','Thêm một bước gần chuyến đi. Không cần tất bật.'),
 ('Интерактивный пример · вымышленные суммы','Interactive example · illustrative amounts','Ví dụ tương tác · số tiền giả định'),
 ]
+ROWS += [
+('Виза · вспомнить заранее','Visa · remember in advance','Visa · nhớ trước thời hạn'),
+('Срок визы на виду.','Your visa deadline in view.','Thời hạn visa luôn rõ ràng.'),
+('Напоминание — вовремя.','A reminder at the right time.','Nhắc nhở đúng lúc.'),
+('Укажите дату окончания визы и выберите, за сколько дней напомнить. Приложение покажет, сколько дней осталось, и пришлёт уведомление заранее, если уведомления разрешены.','Enter your visa expiry date and choose how many days ahead to be reminded. The app shows the days remaining and sends an advance reminder when notifications are enabled.','Nhập ngày hết hạn visa và chọn số ngày muốn được nhắc trước. Ứng dụng hiển thị số ngày còn lại và gửi lời nhắc trước khi hết hạn nếu bạn cho phép thông báo.'),
+('До окончания визы','Until your visa expires','Đến khi visa hết hạn'),
+('дней','days','ngày'),('Напомнить за','Remind me ahead','Nhắc trước'),('7 дней','7 days','7 ngày'),
+('Вы выбираете срок напоминания','You choose when to be reminded','Bạn chọn thời điểm nhắc nhở'),
+('Пора проверить визу','Time to check your visa','Đã đến lúc kiểm tra visa'),
+('До окончания осталось 7 дней.','Your visa expires in 7 days.','Visa sẽ hết hạn sau 7 ngày.'),
+('Важная дата под контролем. Есть время подготовиться.','An important date in view. Time to prepare.','Ngày quan trọng trong tầm tay. Có thời gian chuẩn bị.'),
+]
 TEXT = {lang: {row[0]: row[i] for row in ROWS} for i,lang in [(1,'en'),(2,'vi')]}

@@ -41,8 +41,10 @@
     steps.forEach((step,i) => step.classList.toggle('is-active',i === index));
     buttons.forEach((button,i) => button.setAttribute('aria-pressed',String(i === index)));
     captions.forEach((caption,i) => {caption.hidden = i !== index;});
-    pagination.textContent = `0${index + 1} / 03`;
-    const target = {left:index > 0 ? 1500:1850,spent:index > 0 ? 3500:3150,saved:index === 2 ? 19500:18000};
+    pagination.textContent = `0${index + 1} / 0${steps.length}`;
+    stage.querySelector('.stage-finances').hidden = index === 3;
+    stage.querySelector('.stage-visa').hidden = index !== 3;
+    const target = {left:index > 0 ? 1500:1850,spent:index > 0 ? 3500:3150,saved:index >= 2 ? 19500:18000};
     cancelAnimationFrame(frame);
     if (reduced.matches || document.hidden) {paint(target); return;}
     const from = {...displayed};
