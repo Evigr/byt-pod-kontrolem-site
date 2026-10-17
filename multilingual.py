@@ -3,11 +3,27 @@ from pathlib import Path
 from html.parser import HTMLParser
 import html
 import json
+import re
 from translations import TEXT
 
 LANGS = {'ru': 'Русский', 'en': 'English', 'vi': 'Tiếng Việt'}
 BASE = 'https://evigr.github.io/byt-pod-kontrolem-site/'
 PAGES = ['index.html', 'privacy.html', 'terms.html', 'support.html']
+
+# Illustrative local budgets, not live exchange rates.
+MONEY_SCALE = {'en': 0.02, 'vi': 200}
+DEMO_AMOUNTS = {350, 1500, 1850, 3150, 3500, 5000, 18000, 19500, 60000}
+
+def local_money(text, lang):
+    def amount(match):
+        original = int(match[0].replace(' ', ''))
+        if original not in DEMO_AMOUNTS: return match[0]
+        value = round(original * MONEY_SCALE[lang])
+        return f'{value:,}'.replace(',', '.' if lang == 'vi' else ',')
+    text = re.sub(r'(?<![\d\w])\d+(?: \d{3})*(?![\d\w])', amount, text)
+    if lang == 'vi': return text.replace('₽', '₫')
+    text = text.replace('₽', '$')
+    return re.sub(r'([\d,]+)\s*\$', r'$\1', text)
 
 def url(lang, name):
     return BASE + ('' if lang == 'ru' else lang + '/') + ('' if name == 'index.html' else name)
@@ -28,9 +44,10 @@ def meta(lang, name):
     ) + f'<link rel="alternate" hreflang="x-default" href="{url("ru",name)}">'
 
 class Translate(HTMLParser):
-    def __init__(self, lang):
+    def __init__(self, lang, money=False):
         super().__init__(convert_charrefs=False)
         self.lang = lang
+        self.money = money
         self.parts = []
 
     def tr(self, value):
@@ -40,6 +57,8 @@ class Translate(HTMLParser):
     def handle_decl(self, decl): self.parts.append('<!'+decl+'>')
     def handle_starttag(self, tag, attrs):
         result=[]
+        if self.money and dict(attrs).get('class') == 'story-stage':
+            attrs = attrs + [('data-money-scale', str(MONEY_SCALE[self.lang]))]
         for key, value in attrs:
             if tag == 'html' and key == 'lang': value = self.lang
             elif key in ['aria-label', 'content'] and value: value = self.tr(value)
@@ -52,6 +71,7 @@ class Translate(HTMLParser):
     def handle_data(self, data):
         stripped=data.strip()
         translated=self.tr(stripped)
+        if self.money: translated = local_money(translated, self.lang)
         self.parts.append(html.escape(data.replace(stripped,translated,1)) if stripped else data)
     def handle_entityref(self, name): self.parts.append('&'+name+';')
     def handle_charref(self, name): self.parts.append('&#'+name+';')
@@ -74,7 +94,7 @@ def build_languages(out):
         for name, source in sources.items():
             if lang == 'ru': rendered=source
             else:
-                parser=Translate(lang); parser.feed(source); rendered=''.join(parser.parts)
+                parser=Translate(lang, money=name=='index.html'); parser.feed(source); rendered=''.join(parser.parts)
                 if name in ['privacy.html','terms.html']:
                     document=json.loads((out.parent/'legal'/f'{lang}.json').read_text(encoding='utf-8'))[
                         'privacy' if name=='privacy.html' else 'terms']

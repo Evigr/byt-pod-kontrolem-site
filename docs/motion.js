@@ -23,16 +23,18 @@
   const savedBar = stage.querySelector('[data-bar="saved"]');
   let active = -1;
   let frame = 0;
-  let displayed = {left:1850,spent:3150,saved:18000};
-  const digits = n => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  const scale = Number(stage.dataset.moneyScale || 1);
+  let displayed = {left:1850*scale,spent:3150*scale,saved:18000*scale};
+  const formatter = new Intl.NumberFormat(document.documentElement.lang, {maximumFractionDigits:0});
+  const digits = n => formatter.format(Math.round(n));
   const paint = values => {
     displayed = values;
     counters.left.textContent = digits(values.left);
     counters.spent.textContent = digits(values.spent);
     counters.saved.textContent = digits(values.saved);
-    counters.percent.textContent = `${Math.round(values.spent / 50)}%`;
-    budgetBar.style.width = `${values.spent / 50}%`;
-    savedBar.style.width = `${values.saved / 600}%`;
+    counters.percent.textContent = `${Math.round(values.spent / (50*scale))}%`;
+    budgetBar.style.width = `${values.spent / (50*scale)}%`;
+    savedBar.style.width = `${values.saved / (600*scale)}%`;
   };
   function select(index) {
     if (index === active) return;
@@ -44,7 +46,7 @@
     pagination.textContent = `0${index + 1} / 0${steps.length}`;
     stage.querySelector('.stage-finances').hidden = index === 3;
     stage.querySelector('.stage-visa').hidden = index !== 3;
-    const target = {left:index > 0 ? 1500:1850,spent:index > 0 ? 3500:3150,saved:index >= 2 ? 19500:18000};
+    const target = {left:(index > 0 ? 1500:1850)*scale,spent:(index > 0 ? 3500:3150)*scale,saved:(index >= 2 ? 19500:18000)*scale};
     cancelAnimationFrame(frame);
     if (reduced.matches || document.hidden) {paint(target); return;}
     const from = {...displayed};
