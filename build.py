@@ -45,7 +45,7 @@ home='''<section class="hero"><div><span class="eyebrow">ДЛЯ ПОВСЕДНЕ
 from story import STORY
 home = home.replace('<section id="features"', STORY + '<section id="features"', 1)
 landing = page('Сроки, счета и расходы',home)
-landing = landing.replace('</head>', '<link rel="stylesheet" href="motion.css"><script src="motion.js" defer></script></head>')
+landing = landing.replace('</head>', '<link rel="stylesheet" href="motion.css?v=visa1"><script src="motion.js?v=visa1" defer></script></head>')
 (out/'index.html').write_text(landing,encoding='utf-8')
 for src,dst,title in [('PRIVACY_POLICY.md','privacy.html','Политика конфиденциальности'),('TERMS_OF_USE.md','terms.html','Условия использования')]:
     text=(app/'docs'/src).read_text(encoding='utf-8')

@@ -43,8 +43,8 @@ class Translate(HTMLParser):
         for key, value in attrs:
             if tag == 'html' and key == 'lang': value = self.lang
             elif key in ['aria-label', 'content'] and value: value = self.tr(value)
-            if tag == 'link' and key == 'href' and value in ['style.css','motion.css','favicon.svg']: value = '../'+value
-            if tag == 'script' and key == 'src' and value == 'motion.js': value = '../'+value
+            if tag == 'link' and key == 'href' and value.split('?')[0] in ['style.css','motion.css','favicon.svg']: value = '../'+value
+            if tag == 'script' and key == 'src' and value.split('?')[0] == 'motion.js': value = '../'+value
             result.append(key if value is None else key+'="'+html.escape(value,quote=True)+'"')
         self.parts.append('<'+tag+(' '+ ' '.join(result) if result else '')+'>')
     def handle_startendtag(self, tag, attrs): self.handle_starttag(tag,attrs)
