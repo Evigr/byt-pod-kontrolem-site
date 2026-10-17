@@ -94,6 +94,8 @@ def build_languages(out):
         for name, source in sources.items():
             if lang == 'ru': rendered=source
             else:
+                # Кнопка «Голосом» есть в приложении только на русском — в макете en/vi её нет.
+                source=re.sub(r'<span data-only="ru">.*?</small></span>','',source)
                 parser=Translate(lang, money=name=='index.html'); parser.feed(source); rendered=''.join(parser.parts)
                 if name in ['privacy.html','terms.html']:
                     document=json.loads((out.parent/'legal'/f'{lang}.json').read_text(encoding='utf-8'))[
