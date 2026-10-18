@@ -2,31 +2,31 @@
 STORY = '''
 <section class="story" aria-labelledby="story-heading">
   <div class="story-heading reveal"><span class="eyebrow">ОДИН ДЕНЬ. ВСЁ ПОД КОНТРОЛЕМ.</span>
-    <h2 id="story-heading">Посмотрите, как<br>становится спокойнее.</h2>
-    <p>Прокрутите вниз — пройдём один обычный день вместе.</p>
+    <h2 id="story-heading">Обычный день<br>с приложением.</h2>
+    <p>Листайте или выбирайте ситуацию. Цифры в примере будут меняться.</p>
   </div>
   <div class="story-layout">
     <div class="story-steps">
       <article class="story-step" id="story-plan" data-step="0">
-        <button class="step-select" type="button" aria-pressed="true" data-select="0"><span class="step-number">01</span><span>Утро · увидеть главное</span></button>
-        <h3>Сегодня уже понятнее.</h3><p>Сколько можно потратить? Когда следующий платёж? Важное собрано рядом — не нужно вспоминать всё самому.</p>
+        <button class="step-select" type="button" aria-pressed="true" data-select="0"><span>Утро · увидеть главное</span></button>
+        <h3>Сколько осталось на сегодня?</h3><p>Откройте приложение утром: остаток бюджета, ближайшие платежи и сроки уже перед вами.</p>
       </article>
       <article class="story-step" id="story-expense" data-step="1">
-        <button class="step-select" type="button" aria-pressed="false" data-select="1"><span class="step-number">02</span><span>День · внести расход</span></button>
-        <h3>Кофе записали.<br>Остаток обновился.</h3><p>Добавили 350 ₽ за кофе — сразу видите, сколько осталось на сегодня. Понятные цифры вместо догадок.</p>
+        <button class="step-select" type="button" aria-pressed="false" data-select="1"><span>День · внести расход</span></button>
+        <h3>Кофе записали.<br>Остаток обновился.</h3><p>Запишите 350 ₽ за кофе. Приложение учтёт покупку и покажет остаток дневного бюджета.</p>
       </article>
       <article class="story-step" id="story-saving" data-step="2">
-        <button class="step-select" type="button" aria-pressed="false" data-select="2"><span class="step-number">03</span><span>Вечер · ближе к цели</span></button>
-        <h3>Большая поездка.<br>Маленький шаг сегодня.</h3><p>Отложили 1 500 ₽ — копилка подросла. Это накопление, поэтому сумма расходов от пополнения не меняется.</p>
+        <button class="step-select" type="button" aria-pressed="false" data-select="2"><span>Вечер · ближе к цели</span></button>
+        <h3>Отложили на поездку.<br>Видно, сколько накопили.</h3><p>Внесите 1 500 ₽ в копилку на путешествие. Пополнение сохранится в истории и не попадёт в расходы.</p>
       </article>
       <article class="story-step" id="story-visa" data-step="3">
-        <button class="step-select" type="button" aria-pressed="false" data-select="3"><span class="step-number">04</span><span>Виза · вспомнить заранее</span></button>
-        <h3>Срок визы на виду.<br>Напоминание — вовремя.</h3><p>Укажите дату окончания визы и выберите, за сколько дней напомнить. Приложение покажет, сколько дней осталось, и пришлёт уведомление заранее, если уведомления разрешены.</p>
+        <button class="step-select" type="button" aria-pressed="false" data-select="3"><span>Виза · вспомнить заранее</span></button>
+        <h3>Срок визы на виду.<br>Можно подготовиться.</h3><p>Укажите дату окончания визы и выберите, за сколько дней напомнить. Приложение покажет, сколько дней осталось, и пришлёт уведомление заранее, если уведомления разрешены.</p>
       </article>
     </div>
     <div class="story-stage" data-stage="0">
       <div class="stage-orbit" aria-hidden="true"></div>
-      <div class="stage-top"><span class="stage-dot"></span><span>ПРИМЕР ОДНОГО ДНЯ</span><span class="stage-pagination" aria-hidden="true">01 / 04</span></div>
+      <div class="stage-top"><span class="stage-dot"></span><span>ПРИМЕР ОДНОГО ДНЯ</span><span class="stage-progress" aria-hidden="true"><i class="is-current"></i><i></i><i></i><i></i></span></div>
       <div class="stage-finances">
       <div class="stage-budget">
         <div class="stage-label">Осталось на сегодня</div>

@@ -18,7 +18,7 @@
   const buttons = [...document.querySelectorAll('[data-select]')];
   const counters = Object.fromEntries([...stage.querySelectorAll('[data-number]')].map(el => [el.dataset.number, el]));
   const captions = [...stage.querySelectorAll('[data-caption]')];
-  const pagination = stage.querySelector('.stage-pagination');
+  const progressDots = [...stage.querySelectorAll('.stage-progress i')];
   const budgetBar = stage.querySelector('[data-bar="budget"]');
   const savedBar = stage.querySelector('[data-bar="saved"]');
   let active = -1;
@@ -33,8 +33,8 @@
     counters.spent.textContent = digits(values.spent);
     counters.saved.textContent = digits(values.saved);
     counters.percent.textContent = `${Math.round(values.spent / (50*scale))}%`;
-    budgetBar.style.width = `${values.spent / (50*scale)}%`;
-    savedBar.style.width = `${values.saved / (600*scale)}%`;
+    budgetBar.style.transform = `scaleX(${values.spent / (5000*scale)})`;
+    savedBar.style.transform = `scaleX(${values.saved / (60000*scale)})`;
   };
   function select(index) {
     if (index === active) return;
@@ -43,7 +43,7 @@
     steps.forEach((step,i) => step.classList.toggle('is-active',i === index));
     buttons.forEach((button,i) => button.setAttribute('aria-pressed',String(i === index)));
     captions.forEach((caption,i) => {caption.hidden = i !== index;});
-    pagination.textContent = `0${index + 1} / 0${steps.length}`;
+    progressDots.forEach((dot,i) => dot.classList.toggle('is-current',i === index));
     stage.querySelector('.stage-finances').hidden = index === 3;
     stage.querySelector('.stage-visa').hidden = index !== 3;
     const target = {left:(index > 0 ? 1500:1850)*scale,spent:(index > 0 ? 3500:3150)*scale,saved:(index >= 2 ? 19500:18000)*scale};

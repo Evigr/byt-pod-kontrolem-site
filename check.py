@@ -21,6 +21,11 @@ class Page(HTMLParser):
 pages={p:Page(p.read_text(encoding='utf-8')) for p in DOCS.rglob('*.html')}
 assert len(pages)==12
 for path,page in pages.items():
+    source=path.read_text(encoding='utf-8')
+    assert '—' not in source and '&mdash;' not in source and '&#8212;' not in source, path
+    if path.name=='index.html':
+        assert 'step-number' not in source and 'stage-pagination' not in source, path
+        assert not re.search(r'0[1-4] / ', source), path
     lang=path.parent.name if path.parent!=DOCS else 'ru'
     assert page.lang==lang, path
     switches=[a for a in page.links if 'hreflang' in a]
@@ -41,5 +46,5 @@ for path,page in pages.items():
             doc=json.loads((ROOT/'legal'/f'{lang}.json').read_text(encoding='utf-8'))[key]
             normalized=' '.join(text.split())
             for item in doc['intro']+[s['text'] for s in doc['sections']]:
-                assert ' '.join(item.split()) in normalized,(path,item[:40])
+                assert ' '.join(item.replace('—','-').split()) in normalized,(path,item[:40])
 print('OK: 12 pages; links and language switches; complete legal translations; no untranslated Russian text.')

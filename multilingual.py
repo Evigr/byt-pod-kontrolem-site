@@ -105,5 +105,7 @@ def build_languages(out):
                     rendered=rendered[:a]+legal_body(document,lang)+rendered[b:]
             rendered=rendered.replace('</header>',language_links(lang,name)+'</header>')
             rendered=rendered.replace('</head>',meta(lang,name)+'</head>')
+            # Typography only: keep source legal documents and their numbering intact.
+            rendered=rendered.replace('—', '-').replace('&mdash;', '-').replace('&#8212;', '-')
             (dest/name).write_text(rendered,encoding='utf-8')
     print('Built 12 pages: ru, en, vi')
