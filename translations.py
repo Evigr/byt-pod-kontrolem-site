@@ -6,18 +6,18 @@ ROWS = [
 ('Сроки, счета и расходы','Deadlines, bills and expenses','Thời hạn, hóa đơn và chi tiêu'),
 ('ДЛЯ ПОВСЕДНЕВНОЙ ЖИЗНИ · ANDROID','EVERYDAY LIFE · ANDROID','CHO CUỘC SỐNG HẰNG NGÀY · ANDROID'),
 ('Меньше держать','Less to keep','Bớt phải'),('в голове.','in mind.','ghi nhớ.'),('Больше жить.','More room for life.','Thêm thời gian sống.'),
-('Когда платить за квартиру, сколько осталось на сегодня и когда заканчивается виза. Даты и деньги в одном приложении.','Rent, bills, expenses and important dates, all in one calm place. Home Under Control helps you see what’s coming up and understand where your money goes.','Tiền thuê nhà, hóa đơn, chi tiêu và những ngày quan trọng — tất cả ở một nơi. Sinh hoạt trong tầm tay giúp bạn theo dõi việc sắp đến và hiểu tiền đã chi vào đâu.'),
+('Аренда, счета, расходы и важные даты — в одном спокойном месте. «Быт под контролем» помогает видеть ближайшее и понимать, куда уходят деньги.','Rent, bills, expenses and important dates, all in one calm place. Home Under Control helps you see what’s coming up and understand where your money goes.','Tiền thuê nhà, hóa đơn, chi tiêu và những ngày quan trọng — tất cả ở một nơi. Sinh hoạt trong tầm tay giúp bạn theo dõi việc sắp đến và hiểu tiền đã chi vào đâu.'),
 ('Посмотреть возможности','Explore the features','Khám phá tính năng'),
 ('Готовится к публикации в Google Play','Coming to Google Play','Sắp có trên Google Play'),
 ('Без рекламы','No ads','Không quảng cáo'),('Без регистрации','No sign-up','Không cần đăng ký'),('Записи на устройстве','Records stay on your device','Dữ liệu trên thiết bị'),
-('Важное на сегодня','The essentials, together','Mọi điều quan trọng ở đây'),
+('Всё важное — рядом','The essentials, together','Mọi điều quan trọng ở đây'),
 ('Сегодня','Today','Hôm nay'),('Неделя','Week','Tuần'),('Месяц','Month','Tháng'),
 ('Осталось на сегодня','Left for today','Còn lại hôm nay'),('63% потрачено','63% spent','Đã chi 63%'),('Потрачено','Spent','Đã chi'),('Лимит','Limit','Hạn mức'),
 ('Ближайшее','Coming up','Sắp đến'),('Все ›','All ›','Tất cả ›'),('Аренда','Rent','Thuê nhà'),('До конца договора','Until the lease ends','Đến khi hết hợp đồng'),('Через 16 дней','In 16 days','Còn 16 ngày'),
 ('Показание','Reading','Chỉ số'),('Срок','Deadline','Thời hạn'),('Платёж','Payment','Thanh toán'),('Ещё','More','Thêm'),('Копилка','Savings','Tiết kiệm'),('На путешествие','For a trip','Cho chuyến đi'),('18 000 из 60 000 ₽','18 000 of 60 000 ₽','18 000 trên 60 000 ₽'),
 ('Пример интерфейса · данные вымышлены','Interface illustration · example data','Minh họa giao diện · dữ liệu giả định'),
-('ДЛЯ ВАШИХ ПОВСЕДНЕВНЫХ ДЕЛ','ONE APP. EVERYDAY ESSENTIALS.','MỘT ỨNG DỤNG. NHỮNG VIỆC QUEN THUỘC.'),
-('Даты, платежи','Give everyday admin','Để việc nhà'),('и планы на деньги.','less of your attention.','bớt chiếm thời gian của bạn.'),
+('ОДНО ПРИЛОЖЕНИЕ. ПРИВЫЧНЫЕ ДЕЛА.','ONE APP. EVERYDAY ESSENTIALS.','MỘT ỨNG DỤNG. NHỮNG VIỆC QUEN THUỘC.'),
+('Чтобы быт занимал','Give everyday admin','Để việc nhà'),('меньше вашего внимания.','less of your attention.','bớt chiếm thời gian của bạn.'),
 ('СРОКИ','DEADLINES','THỜI HẠN'),('Важные даты на виду','Important dates in sight','Ngày quan trọng luôn rõ ràng'),
 ('Виза, страховка, аренда или повторяющееся дело. Отсчёт дней, понятные цвета срочности и напоминания.','Visas, insurance, leases or recurring tasks. Day counters, clear urgency colours and reminders.','Visa, bảo hiểm, hợp đồng thuê nhà hay việc định kỳ. Đếm ngày, màu sắc thể hiện mức độ khẩn cấp và lời nhắc.'),
 ('РАСХОДЫ','EXPENSES','CHI TIÊU'),('Понятно, куда ушло','Know where it went','Biết tiền đã chi vào đâu'),
@@ -27,10 +27,10 @@ ROWS = [
 ('БЮДЖЕТ И КОПИЛКА','BUDGET & SAVINGS','NGÂN SÁCH VÀ TIẾT KIỆM'),('Маленькие шаги к цели','Small steps towards your goals','Từng bước nhỏ đến mục tiêu'),
 ('Бюджет на месяц и дневной лимит из остатка. Отдельные цели накопления с историей пополнений и снятий.','A monthly budget and a daily allowance based on what’s left. Separate savings goals with a history of deposits and withdrawals.','Ngân sách tháng và hạn mức ngày tính từ số tiền còn lại. Các mục tiêu tiết kiệm riêng với lịch sử thêm và rút tiền.'),
 ('ВАШИ ЗАПИСИ ОСТАЮТСЯ ВАШИМИ','YOUR RECORDS STAY YOURS','DỮ LIỆU CỦA BẠN VẪN LÀ CỦA BẠN'),
-('Без аккаунта.','No account.','Không cần tài khoản.'),('Данные на телефоне.','No unnecessary noise.','Không phiền nhiễu.'),
+('Без аккаунта.','No account.','Không cần tài khoản.'),('Без лишнего шума.','No unnecessary noise.','Không phiền nhiễu.'),
 ('Записи хранятся на устройстве. У приложения нет рекламы и аналитики. Для сохранности данных можно создать резервную копию и защитить её паролем.','Your records are stored on your device. The app has no advertising or analytics. You can create a backup and protect it with a password.','Dữ liệu được lưu trên thiết bị. Ứng dụng không có quảng cáo hay công cụ phân tích. Bạn có thể tạo bản sao lưu và bảo vệ bằng mật khẩu.'),
-('Интернет нужен для обновления курсов. Голосовой ввод использует системную службу распознавания. Подробности есть в политике конфиденциальности.','Exchange-rate updates use the internet. Voice entry is available only when the app is in Russian and uses your device’s speech recognition service; see the privacy policy for details.','Cần internet để cập nhật tỷ giá. Nhập bằng giọng nói chỉ có khi ứng dụng dùng tiếng Nga và sử dụng dịch vụ nhận dạng của thiết bị; xem chính sách quyền riêng tư để biết thêm.'),
-('Как обрабатываются данные ↗','How data is handled ↗','Cách xử lý dữ liệu ↗'),('Скоро в Google Play.','Start with the essentials.','Bắt đầu từ những điều đơn giản.'),
+('Для обновления курсов используется интернет. Голосовой ввод работает через системную службу распознавания — подробнее в политике.','Exchange-rate updates use the internet. Voice entry is available only when the app is in Russian and uses your device’s speech recognition service; see the privacy policy for details.','Cần internet để cập nhật tỷ giá. Nhập bằng giọng nói chỉ có khi ứng dụng dùng tiếng Nga và sử dụng dịch vụ nhận dạng của thiết bị; xem chính sách quyền riêng tư để biết thêm.'),
+('Как обрабатываются данные ↗','How data is handled ↗','Cách xử lý dữ liệu ↗'),('Начинаем с простого.','Start with the essentials.','Bắt đầu từ những điều đơn giản.'),
 ('Приложение готовится к публикации в Google Play.','The app is being prepared for release on Google Play.','Ứng dụng đang được chuẩn bị để phát hành trên Google Play.'),
 ('Здесь появится ссылка на страницу магазина.','The store link will appear here.','Liên kết đến trang cửa hàng sẽ xuất hiện ở đây.'),('Связаться с разработчиком ↗','Contact the developer ↗','Liên hệ nhà phát triển ↗'),
 ('← На главную','← Home','← Trang chủ'),('МЫ НА СВЯЗИ','GET IN TOUCH','LIÊN HỆ VỚI CHÚNG TÔI'),
@@ -49,17 +49,17 @@ ROWS = [
 ('Основное меню','Main navigation','Điều hướng chính'),('Иллюстрация интерфейса с вымышленными данными','Interface illustration with example data','Minh họa giao diện với dữ liệu giả định'),
 ('Сроки, расходы, счета и копилка в одном Android-приложении. Официальный сайт «Быт под контролем».','Deadlines, expenses, bills and savings in one Android app. The official Home Under Control website.','Thời hạn, chi tiêu, hóa đơn và tiết kiệm trong một ứng dụng Android. Trang chính thức của Sinh hoạt trong tầm tay.'),
 ('ОДИН ДЕНЬ. ВСЁ ПОД КОНТРОЛЕМ.','ONE DAY. EVERYTHING IN VIEW.','MỘT NGÀY. MỌI VIỆC TRONG TẦM TAY.'),
-('Обычный день','See how life','Khám phá cách'),('с приложением.','feels a little calmer.','cuộc sống nhẹ nhàng hơn.'),
-('Листайте или выбирайте ситуацию. Цифры в примере будут меняться.','Scroll down. Let’s walk through an ordinary day.','Cuộn xuống để cùng trải qua một ngày bình thường.'),
+('Посмотрите, как','See how life','Khám phá cách'),('становится спокойнее.','feels a little calmer.','cuộc sống nhẹ nhàng hơn.'),
+('Прокрутите вниз — пройдём один обычный день вместе.','Scroll down. Let’s walk through an ordinary day.','Cuộn xuống để cùng trải qua một ngày bình thường.'),
 ('Утро · увидеть главное','Morning · see what matters','Buổi sáng · xem việc quan trọng'),
-('Сколько осталось на сегодня?','A clearer start to the day.','Bắt đầu ngày mới rõ ràng hơn.'),
-('Откройте приложение утром: остаток бюджета, ближайшие платежи и сроки уже перед вами.','How much can you spend? When is the next bill due? The essentials are together, so you don’t have to remember everything.','Hôm nay có thể chi bao nhiêu? Khi nào đến khoản thanh toán tiếp theo? Những việc quan trọng ở cùng một nơi, bạn không cần nhớ hết.'),
+('Сегодня уже понятнее.','A clearer start to the day.','Bắt đầu ngày mới rõ ràng hơn.'),
+('Сколько можно потратить? Когда следующий платёж? Важное собрано рядом — не нужно вспоминать всё самому.','How much can you spend? When is the next bill due? The essentials are together, so you don’t have to remember everything.','Hôm nay có thể chi bao nhiêu? Khi nào đến khoản thanh toán tiếp theo? Những việc quan trọng ở cùng một nơi, bạn không cần nhớ hết.'),
 ('День · внести расход','Afternoon · record an expense','Ban ngày · ghi lại chi tiêu'),
 ('Кофе записали.','Coffee recorded.','Đã ghi tiền cà phê.'),('Остаток обновился.','Allowance updated.','Số tiền còn lại đã cập nhật.'),
-('Запишите 350 ₽ за кофе. Приложение учтёт покупку и покажет остаток дневного бюджета.','Add 350 ₽ for coffee and instantly see what’s left for today. Clear figures instead of guesswork.','Ghi 350 ₽ cho cà phê và biết ngay hôm nay còn lại bao nhiêu. Số liệu rõ ràng thay vì phỏng đoán.'),
+('Добавили 350 ₽ за кофе — сразу видите, сколько осталось на сегодня. Понятные цифры вместо догадок.','Add 350 ₽ for coffee and instantly see what’s left for today. Clear figures instead of guesswork.','Ghi 350 ₽ cho cà phê và biết ngay hôm nay còn lại bao nhiêu. Số liệu rõ ràng thay vì phỏng đoán.'),
 ('Вечер · ближе к цели','Evening · closer to your goal','Buổi tối · gần mục tiêu hơn'),
-('Отложили на поездку.','A big trip.','Một chuyến đi lớn.'),('Видно, сколько накопили.','A small step today.','Một bước nhỏ hôm nay.'),
-('Внесите 1 500 ₽ в копилку на путешествие. Пополнение сохранится в истории и не попадёт в расходы.','Put aside 1 500 ₽ and your savings grow. It’s a savings contribution, so your expense total stays the same.','Để dành 1 500 ₽ và khoản tiết kiệm tăng lên. Đây là tiền để dành nên tổng chi tiêu không thay đổi.'),
+('Большая поездка.','A big trip.','Một chuyến đi lớn.'),('Маленький шаг сегодня.','A small step today.','Một bước nhỏ hôm nay.'),
+('Отложили 1 500 ₽ — копилка подросла. Это накопление, поэтому сумма расходов от пополнения не меняется.','Put aside 1 500 ₽ and your savings grow. It’s a savings contribution, so your expense total stays the same.','Để dành 1 500 ₽ và khoản tiết kiệm tăng lên. Đây là tiền để dành nên tổng chi tiêu không thay đổi.'),
 ('ПРИМЕР ОДНОГО ДНЯ','A DAY AT A GLANCE','VÍ DỤ MỘT NGÀY'),('Кофе','Coffee','Cà phê'),('Расход добавлен','Expense added','Đã thêm khoản chi'),
 ('Важное на виду. Можно заниматься своим днём.','The essentials are in view. Get on with your day.','Việc quan trọng đã rõ. Bạn có thể tiếp tục ngày của mình.'),
 ('Расход учтён. На сегодня осталось 1 500 ₽.','Expense recorded. You have 1 500 ₽ left for today.','Đã ghi khoản chi. Hôm nay còn lại 1 500 ₽.'),
@@ -69,7 +69,7 @@ ROWS = [
 ROWS += [
 ('Виза · вспомнить заранее','Visa · remember in advance','Visa · nhớ trước thời hạn'),
 ('Срок визы на виду.','Your visa deadline in view.','Thời hạn visa luôn rõ ràng.'),
-('Можно подготовиться.','A reminder at the right time.','Nhắc nhở đúng lúc.'),
+('Напоминание — вовремя.','A reminder at the right time.','Nhắc nhở đúng lúc.'),
 ('Укажите дату окончания визы и выберите, за сколько дней напомнить. Приложение покажет, сколько дней осталось, и пришлёт уведомление заранее, если уведомления разрешены.','Enter your visa expiry date and choose how many days ahead to be reminded. The app shows the days remaining and sends an advance reminder when notifications are enabled.','Nhập ngày hết hạn visa và chọn số ngày muốn được nhắc trước. Ứng dụng hiển thị số ngày còn lại và gửi lời nhắc trước khi hết hạn nếu bạn cho phép thông báo.'),
 ('До окончания визы','Until your visa expires','Đến khi visa hết hạn'),
 ('дней','days','ngày'),('Напомнить за','Remind me ahead','Nhắc trước'),('7 дней','7 days','7 ngày'),
@@ -79,41 +79,3 @@ ROWS += [
 ('Важная дата под контролем. Есть время подготовиться.','An important date in view. Time to prepare.','Ngày quan trọng trong tầm tay. Có thời gian chuẩn bị.'),
 ]
 TEXT = {lang: {row[0]: row[i] for row in ROWS} for i,lang in [(1,'en'),(2,'vi')]}
-
-# Refined landing-page copy in all three languages.
-TEXT["en"]['Когда платить за квартиру, сколько осталось на сегодня и когда заканчивается виза. Даты и деньги в одном приложении.'] = 'When rent is due, what you can spend today and when your visa expires. Dates and money in one app.'
-TEXT["vi"]['Когда платить за квартиру, сколько осталось на сегодня и когда заканчивается виза. Даты и деньги в одном приложении.'] = 'Ngày đóng tiền nhà, số tiền còn lại hôm nay và ngày visa hết hạn. Theo dõi ngày tháng và tiền bạc trong một ứng dụng.'
-TEXT["en"]['Важное на сегодня'] = 'Today’s essentials'
-TEXT["vi"]['Важное на сегодня'] = 'Việc quan trọng hôm nay'
-TEXT["en"]['Обычный день'] = 'An ordinary day'
-TEXT["vi"]['Обычный день'] = 'Một ngày bình thường'
-TEXT["en"]['с приложением.'] = 'with the app.'
-TEXT["vi"]['с приложением.'] = 'cùng ứng dụng.'
-TEXT["en"]['Листайте или выбирайте ситуацию. Цифры в примере будут меняться.'] = 'Scroll or choose a situation. The example figures will update.'
-TEXT["vi"]['Листайте или выбирайте ситуацию. Цифры в примере будут меняться.'] = 'Cuộn hoặc chọn tình huống. Các số liệu minh họa sẽ thay đổi.'
-TEXT["en"]['Сколько осталось на сегодня?'] = 'What’s left for today?'
-TEXT["vi"]['Сколько осталось на сегодня?'] = 'Hôm nay còn bao nhiêu?'
-TEXT["en"]['Откройте приложение утром: остаток бюджета, ближайшие платежи и сроки уже перед вами.'] = 'Open the app in the morning to see your remaining budget, upcoming bills and deadlines.'
-TEXT["vi"]['Откройте приложение утром: остаток бюджета, ближайшие платежи и сроки уже перед вами.'] = 'Mở ứng dụng buổi sáng để xem ngân sách còn lại, hóa đơn sắp đến và các thời hạn.'
-TEXT["en"]['Запишите 350 ₽ за кофе. Приложение учтёт покупку и покажет остаток дневного бюджета.'] = 'Record 350 ₽ for coffee. The app adds the purchase and shows your remaining daily budget.'
-TEXT["vi"]['Запишите 350 ₽ за кофе. Приложение учтёт покупку и покажет остаток дневного бюджета.'] = 'Ghi lại 350 ₽ cho cà phê. Ứng dụng tính khoản mua và hiển thị ngân sách ngày còn lại.'
-TEXT["en"]['Отложили на поездку.'] = 'Saved for a trip.'
-TEXT["vi"]['Отложили на поездку.'] = 'Để dành cho chuyến đi.'
-TEXT["en"]['Видно, сколько накопили.'] = 'See your savings grow.'
-TEXT["vi"]['Видно, сколько накопили.'] = 'Biết đã tiết kiệm bao nhiêu.'
-TEXT["en"]['Внесите 1 500 ₽ в копилку на путешествие. Пополнение сохранится в истории и не попадёт в расходы.'] = 'Add 1 500 ₽ to your travel savings. The deposit stays in your history and does not count as an expense.'
-TEXT["vi"]['Внесите 1 500 ₽ в копилку на путешествие. Пополнение сохранится в истории и не попадёт в расходы.'] = 'Thêm 1 500 ₽ vào quỹ du lịch. Khoản nạp được lưu trong lịch sử và không tính vào chi tiêu.'
-TEXT["en"]['Можно подготовиться.'] = 'Time to prepare.'
-TEXT["vi"]['Можно подготовиться.'] = 'Có thời gian chuẩn bị.'
-TEXT["en"]['ДЛЯ ВАШИХ ПОВСЕДНЕВНЫХ ДЕЛ'] = 'FOR YOUR EVERYDAY TASKS'
-TEXT["vi"]['ДЛЯ ВАШИХ ПОВСЕДНЕВНЫХ ДЕЛ'] = 'CHO NHỮNG VIỆC HẰNG NGÀY'
-TEXT["en"]['Даты, платежи'] = 'Dates, bills'
-TEXT["vi"]['Даты, платежи'] = 'Ngày tháng, hóa đơn'
-TEXT["en"]['и планы на деньги.'] = 'and money plans.'
-TEXT["vi"]['и планы на деньги.'] = 'và kế hoạch tài chính.'
-TEXT["en"]['Данные на телефоне.'] = 'Data on your phone.'
-TEXT["vi"]['Данные на телефоне.'] = 'Dữ liệu trên điện thoại.'
-TEXT["en"]['Скоро в Google Play.'] = 'Coming to Google Play.'
-TEXT["vi"]['Скоро в Google Play.'] = 'Sắp có trên Google Play.'
-TEXT["en"]['Интернет нужен для обновления курсов. Голосовой ввод использует системную службу распознавания. Подробности есть в политике конфиденциальности.'] = 'Internet access is used to update exchange rates. Voice input uses the system speech recognition service. See the privacy policy for details.'
-TEXT["vi"]['Интернет нужен для обновления курсов. Голосовой ввод использует системную службу распознавания. Подробности есть в политике конфиденциальности.'] = 'Internet được dùng để cập nhật tỷ giá. Nhập giọng nói sử dụng dịch vụ nhận dạng của hệ thống. Xem chi tiết trong chính sách quyền riêng tư.'

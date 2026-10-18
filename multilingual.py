@@ -7,11 +7,6 @@ import re
 from translations import TEXT
 
 LANGS = {'ru': 'Русский', 'en': 'English', 'vi': 'Tiếng Việt'}
-FLAGS = {
-    'ru': '<svg viewBox="0 0 24 16"><path fill="#fff" d="M0 0h24v16H0z"/><path fill="#2454bf" d="M0 5.33h24v10.67H0z"/><path fill="#dc3d48" d="M0 10.67h24V16H0z"/></svg>',
-    'en': '<svg viewBox="0 0 24 16"><path fill="#203b78" d="M0 0h24v16H0z"/><path stroke="#fff" stroke-width="4" d="m0 0 24 16M24 0 0 16"/><path stroke="#db394e" stroke-width="1.5" d="m0 0 24 16M24 0 0 16"/><path stroke="#fff" stroke-width="6" d="M12 0v16M0 8h24"/><path stroke="#db394e" stroke-width="3" d="M12 0v16M0 8h24"/></svg>',
-    'vi': '<svg viewBox="0 0 24 16"><path fill="#d92d3b" d="M0 0h24v16H0z"/><path fill="#ffdf61" d="m12 2 1.5 4.5h4.7l-3.8 2.8 1.5 4.5-3.9-2.8-3.9 2.8 1.5-4.5-3.8-2.8h4.7z"/></svg>',
-}
 BASE = 'https://evigr.github.io/byt-pod-kontrolem-site/'
 PAGES = ['index.html', 'privacy.html', 'terms.html', 'support.html']
 
@@ -40,12 +35,8 @@ def language_links(lang, name):
         prefix = '' if lang == 'ru' else '../'
         href = prefix + ('' if code == 'ru' else code + '/') + name
         current = ' aria-current="page"' if code == lang else ''
-        flag=f'<span class="language-flag" aria-hidden="true">{FLAGS[code]}</span>'
-        links.append(f'<a href="{href}" lang="{code}" hreflang="{code}" aria-label="{title}"{current}>{flag}<span>{title}</span></a>')
-    return (f'<details class="language-picker"><summary aria-label="{label}">'
-        f'<span class="language-flag" aria-hidden="true">{FLAGS[lang]}</span>'
-        f'<span>{LANGS[lang]}</span><svg class="language-chevron" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary>'
-        f'<nav class="language-list" aria-label="{label}">' + ''.join(links) + '</nav></details>')
+        links.append(f'<a href="{href}" lang="{code}" hreflang="{code}"{current}>{title}</a>')
+    return f'<nav class="languages" aria-label="{label}">' + ''.join(links) + '</nav>'
 
 def meta(lang, name):
     return '<link rel="canonical" href="'+url(lang,name)+'">' + ''.join(
@@ -71,10 +62,8 @@ class Translate(HTMLParser):
         for key, value in attrs:
             if tag == 'html' and key == 'lang': value = self.lang
             elif key in ['aria-label', 'content'] and value: value = self.tr(value)
-            if tag == 'link' and key == 'href' and value.split('?')[0] in ['style.css','motion.css','language.css','favicon.svg']: value = '../'+value
+            if tag == 'link' and key == 'href' and value.split('?')[0] in ['style.css','motion.css','favicon.svg']: value = '../'+value
             if tag == 'script' and key == 'src' and value.split('?')[0] == 'motion.js': value = '../'+value
-            if tag == 'script' and key == 'src' and value.split('?')[0] == 'language.js': value = '../'+value
-            if key in ['src', 'poster'] and value and value.startswith('assets/'): value = '../'+value
             result.append(key if value is None else key+'="'+html.escape(value,quote=True)+'"')
         self.parts.append('<'+tag+(' '+ ' '.join(result) if result else '')+'>')
     def handle_startendtag(self, tag, attrs): self.handle_starttag(tag,attrs)
@@ -116,7 +105,6 @@ def build_languages(out):
                     rendered=rendered[:a]+legal_body(document,lang)+rendered[b:]
             rendered=rendered.replace('</header>',language_links(lang,name)+'</header>')
             rendered=rendered.replace('</head>',meta(lang,name)+'</head>')
-            # Typography only: keep source legal documents and their numbering intact.
-            rendered=rendered.replace('—', '-').replace('&mdash;', '-').replace('&#8212;', '-')
+            rendered=rendered.replace('—','-').replace('&mdash;','-').replace('&#8212;','-')
             (dest/name).write_text(rendered,encoding='utf-8')
     print('Built 12 pages: ru, en, vi')
