@@ -14,6 +14,7 @@
   }
   const stage = document.querySelector('.story-stage');
   if (!stage) return;
+  document.querySelector('.story').classList.add('story-enhanced');
   const steps = [...document.querySelectorAll('.story-step')];
   const buttons = [...document.querySelectorAll('[data-select]')];
   const counters = Object.fromEntries([...stage.querySelectorAll('[data-number]')].map(el => [el.dataset.number, el]));
@@ -23,6 +24,7 @@
   const savedBar = stage.querySelector('[data-bar="saved"]');
   let active = -1;
   let frame = 0;
+  let sceneAnimation;
   const scale = Number(stage.dataset.moneyScale || 1);
   let displayed = {left:1850*scale,spent:3150*scale,saved:18000*scale};
   const formatter = new Intl.NumberFormat(document.documentElement.lang, {maximumFractionDigits:0});
@@ -46,13 +48,21 @@
     progressDots.forEach((dot,i) => dot.classList.toggle('is-current',i === index));
     stage.querySelector('.stage-finances').hidden = index === 3;
     stage.querySelector('.stage-visa').hidden = index !== 3;
+    sceneAnimation?.cancel();
+    if (!reduced.matches && active >= 0) {
+      const panel = stage.querySelector(index === 3 ? '.stage-visa' : '.stage-finances');
+      sceneAnimation = panel.animate([
+        {opacity:0,transform:'translateY(12px)'},
+        {opacity:1,transform:'translateY(0)'}
+      ], {duration:360,easing:'cubic-bezier(.2,.7,.2,1)'});
+    }
     const target = {left:(index > 0 ? 1500:1850)*scale,spent:(index > 0 ? 3500:3150)*scale,saved:(index >= 2 ? 19500:18000)*scale};
     cancelAnimationFrame(frame);
     if (reduced.matches || document.hidden) {paint(target); return;}
     const from = {...displayed};
     const start = performance.now();
     function animate(now) {
-      const progress = Math.min(1,(now-start)/750);
+      const progress = Math.min(1,(now-start)/450);
       const ease = 1-Math.pow(1-progress,3);
       paint(Object.fromEntries(Object.keys(target).map(key => [key,from[key]+(target[key]-from[key])*ease])));
       if (progress < 1) frame = requestAnimationFrame(animate);
@@ -61,21 +71,35 @@
   }
   select(0);
   buttons.forEach(button => button.addEventListener('click',() => select(Number(button.dataset.select))));
-  // Scroll changes the demo only after the person scrolls. Buttons also work without scrolling.
+  // Switch when the matching heading reaches the reading area, not near the footer.
   let pending = false;
   function update() {
     pending = false;
-    const line = innerHeight * (innerWidth <= 760 ? 0.73 : 0.48);
+    const stageRect = stage.getBoundingClientRect();
+    const mobilePinned = innerWidth <= 760;
+    const line = mobilePinned ? Math.min(innerHeight - 80, stageRect.bottom + 180) : innerHeight * 0.42;
     let next = 0;
-    for (let i=0;i<steps.length;i++) if (steps[i].getBoundingClientRect().top <= line) next=i;
+    for (let i=0;i<steps.length;i++) if (steps[i].querySelector('h3').getBoundingClientRect().top <= line) next=i;
     select(next);
+    if (!reduced.matches && (next === 2 || next === 3)) {
+      const rect = steps[next].getBoundingClientRect();
+      const progress = Math.max(0,Math.min(1,(line-rect.top)/rect.height));
+      const model = stage.querySelector(next === 2 ? '.car-model' : '.plane-model');
+      model.setAttribute('camera-orbit',next === 2 ? `${30+progress*15}deg 62deg 78%` : `${30+progress*12}deg 68deg 72%`);
+    }
   }
-  window.addEventListener('scroll',() => {
+  function schedule() {
     if (!pending) {pending=true;requestAnimationFrame(update);}
-  }, {passive:true});
+  }
+  window.addEventListener('scroll',schedule,{passive:true});
+  window.addEventListener('resize',schedule);
+  window.addEventListener('pageshow',schedule);
+  window.addEventListener('hashchange',schedule);
+  schedule();
   reduced.addEventListener('change',() => {
     if (reduced.matches) {
       revealObserver?.disconnect();
+      sceneAnimation?.cancel();
       items.forEach(item => item.classList.remove('motion-ready'));
       const index=active; active=-1; select(index);
     }
