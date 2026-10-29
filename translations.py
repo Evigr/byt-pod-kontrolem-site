@@ -78,4 +78,32 @@ ROWS += [
 ('До окончания осталось 7 дней.','Your visa expires in 7 days.','Visa sẽ hết hạn sau 7 ngày.'),
 ('Важная дата под контролем. Есть время подготовиться.','An important date in view. Time to prepare.','Ngày quan trọng trong tầm tay. Có thời gian chuẩn bị.'),
 ]
+ROWS += [
+('Шуршик','Shurshik','Shurshik'),
+('ШУРШИК · ПОМОЩНИК ДЛЯ ПОВСЕДНЕВНЫХ ДЕЛ','SHURSHIK · YOUR EVERYDAY COMPANION','SHURSHIK · BẠN ĐỒNG HÀNH MỖI NGÀY'),
+('Быт под контролем.','Everyday life in order.','Sinh hoạt trong tầm tay.'),
+('С заботой о вас.','With a little care.','Quan tâm đến bạn.'),
+('Расходы, счета и важные даты — в одном приложении. Шуршик помогает навести порядок в делах и освободить голову для жизни.','Expenses, bills and important dates in one app. Shurshik helps you keep everyday tasks in order and make room for life.','Chi tiêu, hóa đơn và những ngày quan trọng trong một ứng dụng. Shurshik giúp sắp xếp công việc hằng ngày để bạn có thêm thời gian tận hưởng cuộc sống.'),
+('Попробовать на примере ↓','Try an example ↓','Xem ví dụ tương tác ↓'),
+('ВАШ ДОМАШНИЙ ПОМОЩНИК','YOUR LITTLE HOME COMPANION','NGƯỜI BẠN NHỎ TRONG NHÀ'),
+('Важное рядом.','The essentials, close by.','Điều quan trọng luôn ở đây.'),
+('Остальному — ваше время.','More time for everything else.','Thêm thời gian cho những điều khác.'),
+('Шуршик в синем колпаке обнимает игрушечный домик','Shurshik in a blue cap hugs a toy house','Shurshik đội mũ xanh ôm một ngôi nhà đồ chơi'),
+('Шуршик приветственно машет лапкой','Shurshik waves hello','Shurshik vẫy tay chào'),
+('ПОЗНАКОМЬТЕСЬ С ШУРШИКОМ','MEET SHURSHIK','LÀM QUEN VỚI SHURSHIK'),
+('Маленький друг.','A little friend.','Một người bạn nhỏ.'),
+('Для привычных дел.','For everyday routines.','Cho những việc hằng ngày.'),
+('Пушистый домовёнок делает ежедневный учёт немного теплее. Записывайте расходы в своём темпе — Шуршик порадуется вместе с вами.','A fluffy little home spirit brings warmth to your daily tracking. Record expenses at your own pace — Shurshik will be happy to see you.','Người bạn nhỏ lông mềm mang đến sự ấm áp khi ghi chép mỗi ngày. Ghi lại chi tiêu theo nhịp riêng của bạn — Shurshik luôn vui khi gặp bạn.'),
+('Предпочитаете только цифры? Питомца можно скрыть в настройках.','Prefer just the numbers? You can hide the companion in settings.','Chỉ muốn xem các con số? Bạn có thể ẩn người bạn nhỏ trong phần cài đặt.'),
+('Что умеет приложение ↗','Explore what the app can do ↗','Khám phá tính năng ứng dụng ↗'),
+('Сроки, расходы, счета и копилка в одном Android-приложении. Официальный сайт приложения «Шуршик».','Deadlines, expenses, bills and savings in one Android app. The official Shurshik website.','Thời hạn, chi tiêu, hóa đơn và tiết kiệm trong một ứng dụng Android. Trang web chính thức của Shurshik.'),
+]
+ROWS += [
+('Поздороваться с Шуршиком','Say hello to Shurshik','Chào Shurshik'),
+('ПОПРОБУЙТЕ САМИ','TRY IT YOURSELF','TỰ MÌNH THỬ'),
+('Одна запись.','One entry.','Một lần ghi.'),('И уже понятнее.','A little more clarity.','Mọi thứ rõ ràng hơn.'),
+('Выберите расход и посмотрите, как меняется остаток. Это пример, данные не сохраняются.','Choose an expense and see your balance change. This is an example; no data is saved.','Chọn một khoản chi và xem số tiền còn lại thay đổi. Đây là ví dụ; dữ liệu không được lưu.'),
+('Кофе · 350 ₽','Coffee · 350 ₽','Cà phê · 350 ₽'),('Продукты · 700 ₽','Groceries · 700 ₽','Thực phẩm · 700 ₽'),
+('Сбросить','Reset','Đặt lại'),
+]
 TEXT = {lang: {row[0]: row[i] for row in ROWS} for i,lang in [(1,'en'),(2,'vi')]}

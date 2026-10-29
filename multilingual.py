@@ -12,7 +12,7 @@ PAGES = ['index.html', 'privacy.html', 'terms.html', 'support.html']
 
 # Illustrative local budgets, not live exchange rates.
 MONEY_SCALE = {'en': 0.02, 'vi': 200}
-DEMO_AMOUNTS = {350, 1500, 1850, 3150, 3500, 5000, 18000, 19500, 60000}
+DEMO_AMOUNTS = {350, 700, 1500, 1850, 3150, 3500, 5000, 18000, 19500, 60000}
 
 def local_money(text, lang):
     def amount(match):
@@ -36,7 +36,9 @@ def language_links(lang, name):
         href = prefix + ('' if code == 'ru' else code + '/') + name
         current = ' aria-current="page"' if code == lang else ''
         links.append(f'<a href="{href}" lang="{code}" hreflang="{code}"{current}>{title}</a>')
-    return f'<nav class="languages" aria-label="{label}">' + ''.join(links) + '</nav>'
+    return (f'<details class="language-picker"><summary aria-label="{label}">'
+            f'<span aria-hidden="true">◎</span> {LANGS[lang]} <span class="language-chevron" aria-hidden="true">⌄</span></summary>'
+            f'<nav class="languages" aria-label="{label}">' + ''.join(links) + '</nav></details>')
 
 def meta(lang, name):
     return '<link rel="canonical" href="'+url(lang,name)+'">' + ''.join(
@@ -62,8 +64,10 @@ class Translate(HTMLParser):
         for key, value in attrs:
             if tag == 'html' and key == 'lang': value = self.lang
             elif key in ['aria-label', 'content'] and value: value = self.tr(value)
-            if tag == 'link' and key == 'href' and value.split('?')[0] in ['style.css','motion.css','favicon.svg']: value = '../'+value
-            if tag == 'script' and key == 'src' and value.split('?')[0] == 'motion.js': value = '../'+value
+            if tag == 'link' and key == 'href' and value.split('?')[0] in ['style.css','motion.css','favicon.svg'] or (tag == 'link' and key == 'href' and value.startswith('images/')): value = '../'+value
+            if tag == 'img' and key == 'src' and value.startswith('images/'): value = '../'+value
+            if key == 'alt' and value: value = self.tr(value)
+            if tag == 'script' and key == 'src' and value.split('?')[0] in ['motion.js', 'interactions.js']: value = '../'+value
             result.append(key if value is None else key+'="'+html.escape(value,quote=True)+'"')
         self.parts.append('<'+tag+(' '+ ' '.join(result) if result else '')+'>')
     def handle_startendtag(self, tag, attrs): self.handle_starttag(tag,attrs)

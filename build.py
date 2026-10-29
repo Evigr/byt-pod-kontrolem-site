@@ -1,4 +1,5 @@
 from pathlib import Path
+from shurshik import refresh_home, refresh_shell
 import html, re
 
 root=Path(__file__).parent
@@ -43,6 +44,7 @@ home='''<section class="hero"><div><span class="eyebrow">ДЛЯ ПОВСЕДНЕ
 <section class="privacy-callout"><span class="eyebrow">ВАШИ ЗАПИСИ ОСТАЮТСЯ ВАШИМИ</span><h2>Без аккаунта.<br>Без лишнего шума.</h2><p>Записи хранятся на устройстве. У приложения нет рекламы и аналитики. Для сохранности данных можно создать резервную копию и защитить её паролем.</p><p class="muted">Для обновления курсов используется интернет. Голосовой ввод работает через системную службу распознавания — подробнее в политике.</p><a class="text-link" href="privacy.html">Как обрабатываются данные ↗</a></section>
 <section class="closing"><div><h2>Начинаем с простого.</h2><p>Приложение готовится к публикации в Google Play.<br>Здесь появится ссылка на страницу магазина.</p></div><a class="button secondary" href="support.html">Связаться с разработчиком ↗</a></section>'''
 from story import STORY
+home = refresh_home(home)
 home = home.replace('<section id="features"', STORY + '<section id="features"', 1)
 landing = page('Сроки, счета и расходы',home)
 landing = landing.replace('</head>', '<link rel="stylesheet" href="motion.css?v=visa-purple1"><script src="motion.js?v=type-only1" defer></script></head>')
@@ -56,4 +58,6 @@ support='''<a class="back" href="./">← На главную</a><span class="eye
 (out/'.nojekyll').touch()
 print('Built four pages in',out)
 from multilingual import build_languages
+for page_path in out.glob('*.html'):
+    page_path.write_text(refresh_shell(page_path.read_text(encoding='utf-8')), encoding='utf-8')
 build_languages(out)
