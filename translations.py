@@ -35,6 +35,7 @@ ROWS = [
 ('Здесь появится ссылка на страницу магазина.','The store link will appear here.','Liên kết đến trang cửa hàng sẽ xuất hiện ở đây.'),('Связаться с разработчиком ↗','Contact the developer ↗','Liên hệ nhà phát triển ↗'),
 ('← На главную','← Home','← Trang chủ'),('МЫ НА СВЯЗИ','GET IN TOUCH','LIÊN HỆ VỚI CHÚNG TÔI'),
 ('Нашли ошибку или хотите предложить улучшение? Напишите разработчику.','Found a bug or have an idea for an improvement? Write to the developer.','Bạn phát hiện lỗi hoặc muốn đề xuất cải tiến? Hãy liên hệ nhà phát triển.'),
+('Написать разработчику ↗','Write to the developer ↗','Liên hệ nhà phát triển ↗'),
 ('Разработчик: Tagirov Tagir','Developer: Tagirov Tagir','Nhà phát triển: Tagirov Tagir'),('Что указать в сообщении','What to include','Thông tin cần gửi'),
 ('Модель телефона, версию Android и приложения, что вы делали и что произошло. Не присылайте пароли и резервные копии с личными записями.','Include your phone model, Android and app versions, what you were doing and what happened. Do not send passwords or backups containing personal records.','Hãy nêu mẫu điện thoại, phiên bản Android và ứng dụng, thao tác bạn đã thực hiện và sự cố xảy ra. Không gửi mật khẩu hoặc bản sao lưu chứa dữ liệu cá nhân.'),
 ('Частые вопросы','Frequently asked questions','Câu hỏi thường gặp'),('Как сохранить записи?','How do I back up my records?','Làm sao để sao lưu dữ liệu?'),
